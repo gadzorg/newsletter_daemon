@@ -1,5 +1,5 @@
 # NewsletterDaemon Gadz.org
-[![Build Status](https://travis-ci.org/Zooip/gorg_ldap_daemon.svg?branch=master)](https://travis-ci.org/Zooip/gorg_ldap_daemon)
+[![Build Status](https://travis-ci.org/gadzorg/newsletter_daemon.svg?branch=master)](https://travis-ci.org/gadzorg/newsletter_daemon) [![Code Climate](https://codeclimate.com/github/gadzorg/newsletter_daemon/badges/gpa.svg)](https://codeclimate.com/github/gadzorg/newsletter_daemon) [![Test Coverage](https://codeclimate.com/github/gadzorg/newsletter_daemon/badges/coverage.svg)](https://codeclimate.com/github/gadzorg/newsletter_daemon/coverage) [![Dependency Status](https://gemnasium.com/badges/github.com/gadzorg/newsletter_daemon.svg)](https://gemnasium.com/github.com/gadzorg/newsletter_daemon)
 
 Receive orders over RabbitMQ to manage Mailchimp lists
 
