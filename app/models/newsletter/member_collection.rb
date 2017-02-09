@@ -3,7 +3,7 @@ module Newsletter
 
     include Enumerable
 
-    RETRIEVE_BATCH_SIZE=1000
+    RETRIEVE_BATCH_SIZE=5000
 
     attr_accessor :members
 
@@ -50,7 +50,7 @@ module Newsletter
 
         Application.logger.debug "Batch n°#{i} : #{(m_.count+1).to_s} - #{(m_.count+RETRIEVE_BATCH_SIZE).to_s}"
 
-        resp=gibbon.lists(list_id).members.retrieve(params: {"count": RETRIEVE_BATCH_SIZE.to_s, "offset": m_.count.to_s})
+        resp=gibbon.lists(list_id).members.retrieve(params: {fields: "total_items,members.email_address,members.status,members.merge_fields,members.list_id","count": RETRIEVE_BATCH_SIZE.to_s, "offset": m_.count.to_s})
         member_count_target=resp.body["total_items"]
 
         m_ += resp.body["members"]
