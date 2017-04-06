@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+APP_PATH = File.expand_path('../config/boot', __FILE__)
+
+require APP_PATH
+
+run ApplicationAPI

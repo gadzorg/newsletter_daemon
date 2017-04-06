@@ -43,6 +43,12 @@ module Newsletter
       )
     end
 
+    def self.find_by_id(id)
+      gibbon=Gibbon::Request.new(api_key: Application.config[:mailchimp_api_key])
+      raw_list=gibbon.lists(id).retrieve.body
+      raw_list&&from_mailchimp(raw_list)
+    end
+
     def self.find_by_name(name)
       gibbon=Gibbon::Request.new(api_key: Application.config[:mailchimp_api_key])
       lists=gibbon.lists.retrieve(params: {"fields": "lists.id,lists.name"}).body['lists']
