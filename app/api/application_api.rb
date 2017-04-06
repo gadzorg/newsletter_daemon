@@ -9,7 +9,7 @@ class ApplicationAPI < Grape::API
 
   resource :mailchimp do
     http_basic do |user, password|
-      user == ENV['MAILCHIMP_API_USER'] && password == ENV['MAILCHIMP_API_PASSWORD']
+      user == Application.config['mailchimp_api_user'] && password == Application.config['mailchimp_api_password']
     end
 
     # desc 'Return subscription status of given user '
