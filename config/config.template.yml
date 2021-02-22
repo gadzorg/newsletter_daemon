@@ -21,6 +21,8 @@ default: &default
   ldap_password: P4ssWord
   ldap_connection_method: plain #or ssl, tls
 
+  mailchimp_api_user: ""
+  mailchimp_api_password: ""
 
 development:
   <<: *default
