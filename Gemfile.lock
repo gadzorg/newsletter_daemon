@@ -6,9 +6,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.5.0)
-      public_suffix (~> 2.0, >= 2.0.2)
-    amq-protocol (2.1.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    amq-protocol (2.3.2)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -16,8 +16,8 @@ GEM
     bogus (0.1.6)
       dependor (>= 0.0.4)
     builder (3.2.3)
-    bunny (2.6.3)
-      amq-protocol (>= 2.0.1)
+    bunny (2.17.0)
+      amq-protocol (~> 2.3, >= 2.3.1)
     byebug (9.0.6)
     codeclimate-test-reporter (1.0.5)
       simplecov
@@ -38,7 +38,7 @@ GEM
     gorg_message_sender (1.4.5)
       bunny (~> 2.2, >= 2.2.2)
       json-schema (~> 2.6)
-    gorg_service (5.0.0)
+    gorg_service (6.0.0)
       bunny (~> 2.2, >= 2.2.2)
       gorg_message_sender (~> 1.4.2)
       json-schema (~> 2.6)
@@ -58,7 +58,7 @@ GEM
     i18n (0.8.1)
     ice_nine (0.11.2)
     json (1.8.6)
-    json-schema (2.8.0)
+    json-schema (2.8.1)
       addressable (>= 2.4)
     minitest (5.10.1)
     multi_json (1.12.1)
@@ -68,7 +68,7 @@ GEM
       tool (~> 0.2)
     mustermann-grape (0.4.0)
       mustermann (= 0.4.0)
-    public_suffix (2.0.5)
+    public_suffix (4.0.6)
     rack (2.0.1)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -108,11 +108,11 @@ DEPENDENCIES
   byebug
   codeclimate-test-reporter (~> 1.0.0)
   gibbon
-  gorg_service (~> 5.0.0)
+  gorg_service (~> 6.0)
   grape
   grape-swagger
   rspec
   simplecov
 
 BUNDLED WITH
-   1.14.6
+   1.17.3

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'gorg_service', "~> 5.0.0"
+gem 'gorg_service', "~> 6.0"
 gem 'gibbon'
 
 gem "simplecov"
