@@ -1,0 +1,2 @@
+worker: bundle exec ./bin/worker
+api: bundle exec rackup -p 3000 config.ru
