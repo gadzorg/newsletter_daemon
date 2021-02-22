@@ -8,9 +8,9 @@ default: &default
   rabbitmq_queue_name: gdirdaemon
   rabbitmq_deferred_time: 1800000
   rabbitmq_max_attempts: 48
-  exchange_name: exchange
-  rabbitmq_user: my_user
-  rabbitmq_password: P4ssWord
+  rabbitmq_event_exchange_name: agoram_event_exchange
+  rabbitmq_user: guest
+  rabbitmq_password: guest
 
   log_routing_key: "logging.key"
 
