@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'gorg_service', "~> 5.0.0"
+ruby File.read(".ruby-version").strip
+
+gem 'gorg_service', "~> 6.0"
 gem 'gibbon'
 
 gem "simplecov"
